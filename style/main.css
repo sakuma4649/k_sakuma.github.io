@@ -1,0 +1,79 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 2;
+}
+#wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}
+#fv-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background: black;
+}
+.kv{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  background: url(../img/kv.gif) no-repeat center/ cover;
+}
+#fv-area h1{
+  text-align: center;
+  width: 300px;
+  margin: 0  auto;
+}
+#fv-area p{
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+#fv-area img{
+  width: 700px;
+}
+.textarea{
+  background-color: white;
+}
+.story{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title{
+  margin: 20px auto;
+  display: flex;
+}
+.title h2{
+  width: 300px;
+  text-align: center;
+}
+.title p{
+  width: 700px;
+      padding: 0 20px;
+}
+#nowandever{
+  display: flex;
+  align-items: center;
+}
+#nowandever img{
+  width: 300px;
+}
+#nowandever table{
+  width: 700px;
+  padding: 0 20px;
+  text-align: left;
+  text-indent: 5px;
+}
+.caption h3{
+  text-align: center;
+}
+table th{
+  text-align: center;
+}
+table tr:nth-child(odd){
+  background: rgb(245, 245, 245);
+}
