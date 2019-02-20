@@ -22,7 +22,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript">
   $(function(){
+    $(".isScrolled").hide();
     $("#wrapper").hide().fadeIn();
+    $(window).on("scroll",function(){
+      var appear =$("section").offset().top;
+      var currentPos =$(window).scrollTop();
+      if(currentPos > appear){
+        $(".isScrolled").show();
+      } else {
+        $(".isScrolled").hide();
+      }
+
+    });
     $(window).on('scroll',function(){
       var contents = $(".slide-in,.slide-in-right");
       var isAnimate = "isAnimate";
@@ -51,28 +62,53 @@
           <p>
             Portofolio site 2019
           </p>
-          <nav>
-            <ul>
+            <nav>
+              <ul>
 
-              <li>
-                <a href="#00" class="btn-flat-logo">
-  <i class="fa fa-chevron-right"></i> about
-</a>
-</li>
-<li>
-  <a href="#01" class="btn-flat-logo">
-<i class="fa fa-chevron-right"></i> movie
-</a>
-</li>
-<li>
-  <a href="#02" class="btn-flat-logo">
-<i class="fa fa-chevron-right"></i> photo
-</a>
-</li>
-            </ul>
+                <li>
+                  <a href="#00" class="btn-flat-logo">
+    <i class="fa fa-chevron-right"></i> about
+  </a>
+  </li>
+  <li>
+    <a href="#01" class="btn-flat-logo">
+  <i class="fa fa-chevron-right"></i> movie
+  </a>
+  </li>
+  <li>
+    <a href="#02" class="btn-flat-logo">
+  <i class="fa fa-chevron-right"></i> photo
+  </a>
+  </li>
+              </ul>
           </nav>
         </div>
       </header>
+      <!-- after scroll -->
+
+      <nav>
+        <ul class="isScrolled">
+
+          <li class="li-scrolled">
+            <a href="#00" class="btn-flat-logo-scrolled ">
+<i class="fa fa-chevron-right"></i> about
+</a>
+</li>
+<li class="li-scrolled">
+<a href="#01" class="btn-flat-logo-scrolled ">
+<i class="fa fa-chevron-right"></i> movie
+</a>
+</li>
+<li class="li-scrolled">
+<a href="#02" class="btn-flat-logo-scrolled ">
+<i class="fa fa-chevron-right"></i> photo
+</a>
+</li>
+        </ul>
+    </nav>
+
+    <!-- after scroll -->
+
       <section>
         <div class="section-img03" id="00">
           <h1>about</h1>
