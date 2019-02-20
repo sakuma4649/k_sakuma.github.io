@@ -1,0 +1,25 @@
+.section-img h1,.section-img02 h1,.section-img03 h1{
+  text-align: center;
+}
+.section-movie,.section-photo,.section-portrate   {
+  flex-flow: column;
+  height: auto;
+}
+header{
+  flex-flow: column;
+}
+#kv{
+background-size: contain;
+width: 100%;
+    max-width: 100%;
+}
+.works{
+  width: 100%;
+}
+.slide-in{
+  transform: translate(-600px,0);
+  transition: 1s;
+}
+.isAnimate{
+  transform: translate(0px,0);
+}

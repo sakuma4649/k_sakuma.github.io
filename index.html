@@ -1,37 +1,82 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="style/main-sp.css" media="screen and (max-width:800px)">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-sp.css" media="screen and (max-width:700px)">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript">
+  $(function(){
+    $("#wrapper").hide().fadeIn();
+    $(window).on('scroll',function(){
+      var contents = $(".slide-in,.slide-in-right");
+      var isAnimate = "isAnimate";
 
-  </script>
+      contents.each(function(){
+        var elemOffset = $(this).offset().top;
+    var scrollPos = $(window).scrollTop();
+    var wh = $(window).height();
+
+    if(scrollPos > elemOffset - wh + (wh / 2) ){
+      $(this).addClass(isAnimate);
+    }
+});
+});
+});
+</script>
 </head>
 <body>
-  <div id="wrapper">
-    <div id="fv-area">
-      <div class="textarea">
-        <h1>RE:START</h1>
-        <p>ACHIEVE beyond LIMIT.</p>
-      </div>
-      <div class="kv"></div>
-    </div>
-    <section class="story">
-      <div class="title">
-        <h2>Happy new year.</h2>
-        <p> 2019 has just begun since today. So i summerized my Biography and Next Goal that i want to achieve like a japanese tradition "Kakizome". </p>
-      </div>
-      <div id="nowandever">
-        <img src="img/profile.jpg" alt="">
-        <div class="caption">
-          <h3>Biography</h3>
-          <table>
-            <tr>
+    <div id="wrapper">
+      <header>
+        <div id="kv"></div>
+        <div id="kv-caption">
+          <h1>
+            Keiya Sakuma
+          </h1>
+          <p>
+            Portofolio site 2019
+          </p>
+          <nav>
+            <ul>
+
+              <li>
+                <a href="#00" class="btn-flat-logo">
+  <i class="fa fa-chevron-right"></i> about
+</a>
+</li>
+<li>
+  <a href="#01" class="btn-flat-logo">
+<i class="fa fa-chevron-right"></i> movie
+</a>
+</li>
+<li>
+  <a href="#02" class="btn-flat-logo">
+<i class="fa fa-chevron-right"></i> photo
+</a>
+</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section>
+        <div class="section-img03" id="00">
+          <h1>about</h1>
+        </div>
+        <div class="section-portrate slide-in-right">
+          <div class="portrait">
+            <img src="img/portrait/01.jpg" width="200px"alt="">
+          </div>
+          <div class="caption">
+            <h2>
+              Keiya Sakuma
+            </h2>
+            <table>
+            <tbody><tr>
               <td>1994</td><td>Born in Fukushima.</td>
             </tr>
             <tr>
@@ -43,13 +88,68 @@
             <tr>
               <td>2019</td><td>Left BB media.</td>
             </tr>
-            <tr>
-              <td>2019</td><td>Start work at YAMANO print.</td>
-            </tr>
-          </table>
+          </tbody></table>
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+
+      <section >
+        <div class="section-img" id="01">
+          <h1>movie</h1>
+        </div>
+        <div class="section-movie slide-in" >
+          <div class="works">
+            <img src="img/movie/01.jpg" width="200px"alt="">
+            <img src="img/movie/02.jpg" width="200px"alt="">
+            <img src="img/movie/03.jpg" width="200px"alt="">
+
+          </div>
+          <div class="caption">
+            <h2>
+              Achievements
+            </h2>
+            <table>
+              <tr>
+                <td>2012</td><td><a href="https://www.facebook.com/koukouseieizoufes/posts/%E5%A4%A7%E6%9E%97%E5%AE%A3%E5%BD%A6%E3%81%A8%E8%AA%9E%E3%82%8B-%E9%AB%98%E6%A0%A1%E7%94%9F%E6%98%A0%E5%83%8F%E3%83%95%E3%82%A7%E3%82%B9%E3%83%86%E3%82%A3%E3%83%90%E3%83%AB%E3%81%AF%E7%9B%9B%E6%B3%81%E3%81%AE%E3%81%86%E3%81%A1%E3%81%AB%E7%B5%82%E4%BA%86%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E5%87%BA%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F%E6%9D%A5%E5%A0%B4%E3%81%97%E3%81%A6%E9%A0%82%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E7%9A%86%E6%A7%98%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%97%E3%81%9F%E4%B8%8B%E8%A8%98%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E5%8F%97%E8%B3%9E%E4%BD%9C%E3%81%8C%E6%B1%BA%E5%AE%9A%E3%81%97%E3%83%95%E3%82%A7%E3%82%B9%E3%83%86%E3%82%A3%E3%83%90/382909811798962/" target="_blank">『まっすぐ』が大林賞を受賞</a></td>
+              </tr>
+              <tr>
+                <td>2014</td><td><a href="https://www.youtube.com/watch?v=9_uGkt77E8w"target="_blank">ultimo nivel 公式MV作成</a></td>
+              </tr>
+              <tr>
+                <td>2017</td><td><a href="https://zokei-ten2016.tumblr.com/post/156709834311/%CE%BCsv-mr%E6%8A%80%E8%A1%93%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9F%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AA%E3%83%BC%E4%BD%9C%E5%93%81-%E4%BD%90%E4%B9%85%E9%96%93-%E6%B8%93%E7%9F%A2-sakuma-keiya"target="_blank">卒業制作『μSv』がZOKEI賞を受賞</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-img02" id="02">
+          <h1>photo</h1>
+        </div>
+        <div class="section-photo slide-in-right">
+          <div class="works">
+            <img src="img/photo/01.jpg" width="200px"alt="">
+            <img src="img/photo/02.jpg" width="200px"alt="">
+            <img src="img/photo/03.jpg" width="200px"alt="">
+
+          </div>
+          <div class="caption">
+            <h2>
+              Equipments
+            </h2>
+            <p>
+              ◆使用カメラ<br>
+              Canon Eos kiss X4 <br>
+              ◆使用レンズ <br>
+              SIGMA 単焦点広角レンズ 28mm F1.8 EX DG <br>
+              SIGMA 超広角ズームレンズ 10-20mm F3.5 <br>
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        Copyright 2019 Keiya Sakuma Portfolio Site All Rights Reserved.
+      </footer>
+    </div>
 </body>
 </html>
