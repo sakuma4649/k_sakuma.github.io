@@ -23,3 +23,13 @@ width: 100%;
 .isAnimate{
   transform: translate(0px,0);
 }
+footer{
+  background: #ECEAEB;
+  text-align: center;
+  width: 100%;
+      height: 50px;
+      padding-top: 15px;
+}
+header{
+  height: 80vh;
+}
