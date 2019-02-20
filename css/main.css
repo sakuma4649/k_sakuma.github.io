@@ -89,7 +89,7 @@ section{
 .section-img02 h1{
   text-align: left;
 }
-.section-movie,.section-photo,.section-portrate   {
+.section-movie,.section-photo,.section-portrait   {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -171,4 +171,8 @@ top: 0;
   height: 40px;
   margin-top: -40px;
   visibility: hidden;
+}
+.isSelected{
+  border-bottom: solid 3px #FF1B91;
+  margin-top: -3px;
 }
