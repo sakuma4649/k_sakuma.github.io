@@ -166,3 +166,9 @@ top: 0;
 .li-scrolled{
   width: 100%;
 }
+.anchor{
+  display: block;
+  height: 40px;
+  margin-top: -40px;
+  visibility: hidden;
+}
