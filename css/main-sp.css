@@ -1,7 +1,7 @@
 .section-img h1,.section-img02 h1,.section-img03 h1{
   text-align: center;
 }
-.section-movie,.section-photo,.section-portrate   {
+.section-movie,.section-photo,.section-portrait   {
   flex-flow: column;
   height: auto;
 }
