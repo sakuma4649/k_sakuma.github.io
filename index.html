@@ -34,19 +34,20 @@
         $(".isScrolled").hide();
       }
 
-      var portrait =$(".section-img03").offset().top;
-      var movie =$(".section-img").offset().top;
-      var photo =$(".section-img02").offset().top;
-      var isSelected =$("isSelected");
 
-      if(currentPos > portrait){
-        $(".selected-about").addClass(isSelected);
-      } else if (currentPos > movie) {
-        $(".selected-about").removeClass(isSelected);
-        $(".selected-movie").addClass(isSelected);
-      }else if (currentPos > photo) {
-        $(".selected-movie").removeClass(isSelected);
-        $(".selected-photo").addClass(isSelected);
+      var movie =$("#01").offset().top;
+      var photo =$("#02").offset().top;
+
+      var isSelected =$("isSelected");
+      $(".selected-about").removeClass("isSelected");
+      $(".selected-movie").removeClass("isSelected");
+      $(".selected-photo").removeClass("isSelected");
+      if(currentPos <  movie - 100){
+        $(".selected-about").addClass("isSelected");
+      } else if (currentPos < photo - 100) {
+        $(".selected-movie").addClass("isSelected");
+      }else if (currentPos ) {
+        $(".selected-photo").addClass("isSelected");
       }
     });
     $(window).on('scroll',function(){
@@ -106,17 +107,17 @@
         <ul class="isScrolled">
 
           <li class="li-scrolled">
-            <a href="#00" class="btn-flat-logo-scrolled selected-about">
+            <a href="#00" class="btn-flat-logo-scrolled selected-about isSelected">
 <i class="fa fa-chevron-right"></i> about
 </a>
 </li>
 <li class="li-scrolled">
-<a href="#01" class="btn-flat-logo-scrolled selected-movie">
+<a href="#01" class="btn-flat-logo-scrolled selected-movie isSelected">
 <i class="fa fa-chevron-right"></i> movie
 </a>
 </li>
 <li class="li-scrolled">
-<a href="#02" class="btn-flat-logo-scrolled selected-photo">
+<a href="#02" class="btn-flat-logo-scrolled selected-photo isSelected">
 <i class="fa fa-chevron-right"></i> photo
 </a>
 </li>

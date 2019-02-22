@@ -51,7 +51,7 @@ header{
       transition: .4s;
       text-align: center;
 }
-.btn-flat-logo:hover {
+.btn-flat-logo:hover,.btn-flat-logo-scrolled:hover {
   background: #1ec7bb;
 }
 
