@@ -1,0 +1,29 @@
+.kv-area{
+  height: 90vh;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 100px);
+  transition: 1s;
+}
+.headline-left{
+  width: 50%;
+}
+.headline-left h1{
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 1em;
+}
+.span-caption{
+  font-size: 0.5em;
+}
+.headline-right{
+  width: 50%;
+}
+
+.test-section{
+  height: 100vh;
+}

@@ -1,0 +1,8 @@
+.kv-area{
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.test-section{
+  height: 100vh;
+}

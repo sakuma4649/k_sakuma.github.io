@@ -1,0 +1,28 @@
+.header-nav{
+  width: 70%;
+  display: flex;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 30%;
+}
+.header-li{
+  width: 100%;
+}
+.logo{
+  width: 30%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+}
+.logo img{
+  height: 70px;
+}
+nav{
+  height: 70px;
+    background-color: white;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134827837-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-134827837-1');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<link rel="stylesheet" href="css/career.css">
+<link rel="stylesheet" href="css/career-sp.css" media="screen and (max-width:700px)">
+
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/main-sp.css" media="screen and (max-width:700px)">
+<link rel="stylesheet" href="../css/loading.css">
+
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/common-sp.css" media="screen and (max-width:700px)">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $(window).on("load",function(){
+    $(".loading").fadeOut();
+    $(".kv-area").fadeIn();
+    $(".kv-area").css("transform", "translate(0,0)")
+  });
+  $(window).on("scroll",function(){
+    var contents = $(".slide-in,.slide-in-right");
+    var isAnimate = "isAnimate";
+
+    contents.each(function(){
+      var elemOffset = $(this).offset().top;
+  var scrollPos = $(window).scrollTop();
+  var wh = $(window).height();
+
+  if(scrollPos > elemOffset - wh + (wh / 2) ){
+    $(this).addClass(isAnimate);
+    }
+});
+  });
+});
+</script>
+</head>
+<!-- loading-->
+<div class="loading">
+  <img src="../img/loading.gif" alt="ローディング画像">
+</div>
+<!-- loading-->
+<body>
+<div id="wrapper">
+  <!--common item-->
+  <nav>
+    <a href="../index.html">
+      <div class="logo">
+        <img src="../img/logo.jpg" alt="ロゴ">
+      </div>
+    </a>
+
+    <ul  class="header-nav">
+      <li class="header-li">
+        <a href="#00" class="btn-flat-logo-scrolled selected-about">
+  <i class="fa fa-chevron-right"></i> about
+  </a>
+  </li>
+  <li class="header-li">
+  <a href="#01" class="btn-flat-logo-scrolled selected-movie">
+  <i class="fa fa-chevron-right"></i> movie
+  </a>
+  </li>
+  <li class="header-li">
+  <a href="#02" class="btn-flat-logo-scrolled selected-photo ">
+  <i class="fa fa-chevron-right"></i> photo
+  </a>
+  </li>
+    </ul>
+  </nav>
+  <!--common item-->
+<div class="kv-area">
+  <div class="headline-left">
+    <h1>
+      Honesty <br>
+      <span class="span-caption">素直さ</span>
+    </h1>
+  </div>
+  <div class="headline-right">
+    <p>
+      sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text   sample text
+    </p>
+  </div>
+</div>
+    <!--common item-->
+    <section class="test-section">
+      <h2 class="slide-in">
+        Biography</h2>
+    </section>
+  <footer>
+    Copyright 2019 Keiya Sakuma <br class="br-sp">Portfolio Site All Rights Reserved.
+  </footer>
+</div>
+</body>
+</html>
