@@ -55,6 +55,7 @@ header{
   background: #1ec7bb;
 }
 
+
 section{
   width: 100%;
 }
@@ -175,4 +176,7 @@ top: 0;
 .isSelected{
   border-bottom: solid 3px #FF1B91;
   margin-top: -3px;
+}
+.br-sp{
+  display: none;
 }
