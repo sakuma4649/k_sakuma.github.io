@@ -1,0 +1,19 @@
+.br-sp{
+  display: block;
+}
+.head-cont-below{
+  position: absolute;
+  right: 20px;
+  text-align: right;
+  font-size: 15px;
+}
+.head-cont-below{
+  top: 20px;
+}
+.head-cont-below li{
+  margin-right: 0px;
+    font-size: 1rem;
+  display: block;
+  padding: 0px;
+
+}

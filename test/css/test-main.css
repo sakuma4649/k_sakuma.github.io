@@ -1,0 +1,82 @@
+.fv{
+  top: 110px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+.main-img{
+  background: url(../img/fv-img.png) no-repeat center / cover;
+  height: 50vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-img h1{
+text-align: center;
+font-size: 1.5em;
+}
+.main-img h1 span{
+  font-size: 0.5em;
+}
+.caption{
+  height: 40vh;
+  width: 80%;
+}
+.caption{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  flex-flow: column;
+}
+.caption h2{
+  width: 80%;
+  text-align: center;
+}
+.caption h2 span{
+font-size: 0.5em;
+}
+.caption p{
+  width: 80%;
+    text-align: center;
+}
+
+/*news*/
+
+.news{
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  top: 110px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #FBCF78;
+}
+table{
+  position: static;
+    width: 80%;
+  margin-top: 15px;
+border-collapse: collapse;
+}
+tr{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+tr:nth-child(odd){
+  background: white;
+}
+td{
+  height: 30px;
+  text-align: left;
+}
+td:nth-child(odd){
+  text-align: center;
+}
+/*news*/

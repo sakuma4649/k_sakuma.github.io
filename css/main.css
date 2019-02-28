@@ -101,6 +101,7 @@ section{
           padding-bottom: 50px;
       height: 60vh;
           flex-flow: row;
+          flex-wrap: wrap;
 }
 .section-photo{
     flex-flow: row-reverse;
@@ -179,4 +180,21 @@ top: 0;
 }
 .br-sp{
   display: none;
+}
+.portrait{
+  width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caption{
+  width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-section{
+  width: 50%;
+
 }

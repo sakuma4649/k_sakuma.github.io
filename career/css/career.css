@@ -27,3 +27,14 @@
 .test-section{
   height: 100vh;
 }
+
+.display-test{
+  width: 100%;
+  text-align: center;
+}
+.row{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-color: #111;
+}
