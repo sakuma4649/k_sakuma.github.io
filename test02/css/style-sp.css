@@ -1,0 +1,20 @@
+.br-sp{
+  display: inline;
+}
+
+
+
+.fv-area{
+  flex-flow: column;
+  height: 95vh;
+}
+.fv-left{
+  width: 100%;
+}
+.fv-right{
+  width: 100%;
+}
+.fv-right p{
+  font-size: .8em;
+    padding: 10px;
+}
