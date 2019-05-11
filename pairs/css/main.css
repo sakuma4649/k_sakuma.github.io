@@ -1,0 +1,67 @@
+body{
+  background: white;
+font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+  color:#1f1f1f;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+#wrapper{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 60px 0 0;
+}
+
+.team{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+.group{
+  padding: 10px 5px;
+  width: 200px;
+  margin: 15px 0px 15px;
+}
+.group ol{
+  margin: 10px 0px;
+  line-height: 1.5em;
+}
+
+button{
+  box-shadow: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-style: none;
+  background: #248;
+  color: white;
+}
+.caption{
+  width: 90%;
+  padding: 5px 10px;
+  margin: 30px 0px;
+    background-color: #1f1f1f;
+  color: white;
+}
+.caption p{
+  border-radius: 5px;
+  margin: 5px 20px 20px;
+  padding: 10px 15px;
+  background-color: white;
+  color: #1f1f1f;
+}
+footer{
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+  background-color: #1f1f1f;
+  margin-top: 30px;
+  padding: 5px 0px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134827837-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134827837-1');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ペア決め.com</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  function randomTeam() {
+  // 初期化
+  $('#team1').empty();
+  $('#team2').empty();
+  $("#team3").empty();
+  $("#team4").empty();
+
+  // 文字列を取得して改行ごとに分ける
+  var value = ["秋葉", "齊藤", "佐久間", "柴野", "寺田", "千場", "緑川", "山本", "渡邊"];
+  var user = new Array();
+
+  // 配列に格納する
+  for (var i = 0, length = value.length; i < length; i++) {
+    if (value[i]) {
+      user.push(value[i]); // 改行による空の要素が無い配列をuserとする
+    }
+  }
+
+  //乱数で重み付け
+  for (var i = 0, l = user.length; i < l; i++) {
+    user[i] = [user[i], Math.random()];
+  }
+  // ソート
+  user.sort(function(a, b) {
+    return a[1] - b[1];
+  });
+
+  // 重み付けを取り除く
+  for (var i = 0, l = user.length; i < l; i++) {
+    user[i] = user[i][0];
+  }
+console.log(length);
+console.log(i);
+  for (var i = 0, length = user.length; i < length; i++) {
+    if (i < 2) {
+      $('#team1').append('<li>'+ user[i] +'</li>')
+    } else if (i <4) {
+      $('#team2').append('<li>'+ user[i] +'</li>')
+    } else if (i <6) {
+      $('#team3').append('<li>'+ user[i] +'</li>')
+    } else {
+      $('#team4').append('<li>'+ user[i] +'</li>')
+    }
+  }
+}
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+  <div class="title">
+    <h1>
+      ペア決め.com
+    </h1>
+  </div>
+  <div class="team">
+    <div class="group">
+      <h5>team1</h5>
+      <ol id="team1"></ol>
+    </div>
+    <div class="group">
+      <h5>team2</h5>
+      <ol id="team2"></ol>
+    </div>
+    <div class="group">
+      <h5>team3</h5>
+      <ol id="team3"></ol>
+    </div>
+    <div class="group">
+      <h5>team4</h5>
+      <ol id="team4"></ol>
+    </div>
+  </div>
+
+
+
+
+
+  <button onclick="randomTeam()">今日のペア！</button>
+
+<div class="caption">
+  <h5>使い方</h5>
+  <p>
+    「今日のペア」ボタンを押すと、ランダムな組み合わせが出てきます。<br>
+  </p>
+</div>
+<footer>
+  © ️2019 Sakuma @KANSHINKYU
+</footer>
+</div>
+</body>
+</html>
