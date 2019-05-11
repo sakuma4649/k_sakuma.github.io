@@ -19,7 +19,7 @@ font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイ�
 .team{
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 85%;
   flex-wrap: wrap;
   margin: 0 auto 30px;
 }
