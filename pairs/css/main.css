@@ -25,12 +25,13 @@ font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイ�
 }
 .group{
   padding: 10px 5px;
-  width: 150px;
+  width: 120px;
   margin: 15px 0px 0px;
 }
 .group ol{
   margin: 10px 0px;
   line-height: 1.5em;
+      margin-left: 1em;
 }
 
 button{
